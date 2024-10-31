@@ -1,0 +1,225 @@
+:root {
+    /* Colors */
+    /* Light colors */
+    --primary-text: #483882; /* For main text */
+    --primary-bg: #DCDCFA; /* For lighter backgrounds */
+    --primary-accent: #211455; /* Accent for important elements */
+
+    /* Dark colors */
+    --secondary-text: #E8E4FB; /* For text on dark backgrounds */
+    --secondary-bg: #53438C; /* Dark background color */
+    --secondary-accent: #8B72E3; /* Accent for dark elements */
+
+    /* Neutral colors */
+    --neutral-bg: rgba(255, 255, 255, 0.2); /* Light transparent background for glass effect */
+    --neutral-bg-solid: #F0F0F0; /* Neutral light color for contrast */
+    --neutral-text: #2E2E2E; /* Darker neutral text */
+
+    /* Scrollbar */
+    --scrollbar-track: var(--primary-accent);
+    --scrollbar-thumb: var(--neutral-bg-solid);
+    --scrollbar-size: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--secondary-bg); /* Dark background */
+    color: var(--secondary-text); /* Light text for readability */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+/* Navigation Bar */
+.navbar ul {
+    list-style-type: none;
+    background-color: var(--neutral-bg-solid); /* Light background for contrast */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 15px 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--primary-text); /* Dark text on light background */
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-accent); /* Hover effect with accent color */
+}
+
+/* Video */
+video {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* Plyr Video Player Customization */
+.plyr__controls button, 
+.plyr__controls .plyr__control, 
+.plyr__controls .plyr__volume, 
+.plyr__progress, 
+.plyr__time, 
+.plyr__controls__item {
+    background-color: transparent !important;
+}
+:root {
+    --plyr-color-main: var(--secondary-bg);
+    --plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    --plyr-video-control-color: var(--neutral-bg-solid);
+    --plyr-video-control-color-hover: var(--secondary-bg);
+    --plyr-tooltip-background: var(--neutral-bg-solid);
+    --plyr-video-control-background: #000000;
+    --plyr-video-background: #ffffff00;
+    --plyr-control-toggle-checked-background: #e90000;
+    /*
+    --plyr-video-control-background-hover: var(--secondary-accent);
+    --plyr-menu-color: #000000;
+    */
+  }
+
+/* Article */
+article {
+    margin: 0 auto;
+    max-width: 55%;
+    min-width: 768px;
+    color: var(--primary-text);
+    padding-top: 20px;
+    position: relative; 
+    overflow: visible; 
+}
+
+article h1 {
+    text-align: center;
+    color: var(--secondary-text); /* Use accent color for main headings */
+    margin-bottom: 20px;
+    font-size: 4.4rem;
+    font-weight: bold;
+    font-family: BungeeShade;
+}
+
+a {
+    color: var(--primary-accent);
+}
+
+dd {
+    margin-left: 38px;
+}
+dt {
+    margin-top: 12px;
+}
+button {
+    background-color: var(--primary-accent);
+    color: var(--secondary-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+button:hover {
+    background-color: var(--secondary-accent); /* Brighter hover effect */
+}
+
+
+/* Content Box */
+.content-box {
+    border-radius: 12px;
+    background-color: var(--primary-bg); /* Keep the light background */
+    text-align: justify;
+    padding: 20px;
+    margin: 15px 0;
+    
+    
+    /* Enhanced shadow for a "popping out" effect */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Main shadow */
+                0px 0px 5px rgba(255, 255, 255, 0.6) inset; /* Inner glow for subtle lift */
+
+    /* Optional gradient effect for the top to simulate light */
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+summary:hover {
+    cursor: pointer;
+}
+
+/* Scroll Bar */
+body::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+    }
+}
+
+/* Highlited Text */
+::selection {
+    color: var(--neutral-bg-solid);
+    background: var(--secondary-accent);
+    padding: 0.1em 0.2em;
+    border-radius: 12px; 
+}
+::-moz-selection { /* Code for Firefox */
+    color: var(--neutral-bg-solid);
+    background: var(--secondary-accent);
+    padding: 0.1em 0.2em;
+    border-radius: 12px; 
+}
+
+@font-face {
+    font-family: 'BungeeShade';
+    src: url('./BungeeShade-Regular.ttf');
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    article {
+        max-width: 100%;
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    article h1 {
+        font-size: 2.7rem;
+    }
+    
+    .navbar ul {
+        /*flex-direction: column; */
+        padding: 15px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    
+}
+
