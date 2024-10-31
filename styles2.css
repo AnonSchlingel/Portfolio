@@ -39,7 +39,7 @@ body {
 /* Navigation Bar */
 .navbar ul {
     list-style-type: none;
-    background-color: var(--neutral-bg-solid); /* Light background for contrast */
+    background-color: var(--neutral-bg-solid);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,15 +53,36 @@ body {
 }
 
 .navbar ul li a {
+    position: relative;
     text-decoration: none;
-    color: var(--primary-text); /* Dark text on light background */
+    color: var(--primary-text);
     font-weight: bold;
     transition: color 0.2s ease;
 }
 
-.navbar ul li a:hover {
-    color: var(--primary-accent); /* Hover effect with accent color */
+/* Underline effect using the ::after pseudo-element */
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* Position slightly below the text */
+    left: 50%;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: var(--primary-accent);
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+    transform-origin: center; /* Ensures animation starts from center on both hover-in and hover-out */
 }
+
+.navbar ul li a:hover {
+    color: var(--primary-accent); /* Change text color on hover */
+}
+
+.navbar ul li a:hover::after {
+    width: 100%; /* Expand the underline from center */
+}
+
+
 
 /* Video */
 video {
@@ -222,4 +243,3 @@ body::-webkit-scrollbar-thumb {
     }
     
 }
-
