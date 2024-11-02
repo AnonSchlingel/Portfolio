@@ -61,6 +61,7 @@ input:hover, textarea:hover {
 
 input {
     width: 45%;
+    min-width: 200px;
     height: 40px;
 }
 textarea {
