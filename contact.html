@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./media/logo-duck.svg">
+    <title>About</title>
+</head>
+
+<style>
+    /* Page Load Transition */
+    article {
+        animation: transitionIn 0.5s ease forwards;
+    }
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">About Me</a></li>
+                <li><a href="./portfoIio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="article">
+        <h1>Contact</h1>
+
+        <div class="content-box">
+            <h2>Text me on</h2>
+            <div class="qr-section">
+                <div class="qr">
+                    <h3>Telegram</h3>
+                    <a href="https://t.me/Ajona09"><img src="./contact/telegram.svg" alt="Telegram"></a>
+                    <br>
+                    <a href="https://t.me/Ajona09"><h4>@Ajona09</h4></a>
+                </div>
+                <div class="qr">
+                    <h3>Signal</h3>
+                    <a href="https://signal.me/#eu/KFen_LXBPCfTL9BUpbXqdnxOwiqyQV5puM7Db9Ubq033hEf8N3pEu58a4WutOO4e"><img src="./contact/signal.svg" alt="Signal"></a>
+                    <br>
+                    <a href="https://signal.me/#eu/KFen_LXBPCfTL9BUpbXqdnxOwiqyQV5puM7Db9Ubq033hEf8N3pEu58a4WutOO4e"><h4>Ajona.09</h4></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Or write me a message</h2>
+            <form action="https://submit-form.com/p72xXFDow" method="post">
+                <input type="email" name="email" placeholder="E-Mail" required>
+                <input type="text" name="name" placeholder="Name or Company" required>
+                <textarea name="message" placeholder="Type your message here..." required></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+
+    </article>
+
+    <footer style="display: flex; justify-content: center;">
+        <p>
+            ©2024 by Eddy Quiel
+        </p>
+    </footer>
+    
+    <!--JavaScript -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+</html>

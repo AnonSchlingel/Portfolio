@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./plyr/plyr.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./media/logo-duck.svg">
+    <title>Portfolio</title>
+</head>
+
+<style>
+    /* THIS IS Portfolio written with a capital i instead of lowercase L */
+    /* Page Load Transition */
+    article {
+        animation: transitionIn 0.5s ease forwards;
+    }
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">About Me</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <h1>Portfolio</h1>
+
+        <div class="content-box">
+            <h2>Messages</h2> 
+            <video id="player0" playsinline controls>
+                C:\Users\Schlingel\Desktop\Messages
+                <source src="./media/Messages (2024) - Eddy Quiel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                <i>
+                    July 2023 - September 2024<br>
+                    Short Film - 6:46 min <br>
+                    Responsibilities: Directing, Screenplay/Storyboard, Camera, Editing <br>
+                </i>
+                <br>
+                This short film was created as part of my bachelor thesis and builds on the theoretical part, which itself deals with time (travel) in film. The film takes place in two time levels, between which it switches repeatedly. It is about a person who reads through her message history from her ex-partner and remembers the past relationship.
+            </p>
+            <br>
+            <details>
+                <summary>Additional files</summary>
+                <dd style="margin-top: 5px;">
+                    <a href="./media/Bachelorarbeit - Zeit(reisen) im Film [Eddy Quiel].pdf" target="_blank">Bachelor Thesis</a> <br>
+                    <a href="./media/Anhang B -- Drehbuch - MESSAGES.pdf" target="_blank">Screenplay - Messages</a> <br>
+                    <a href="./media/Anhang C -- Storyboard - MESSAGES.pdf" target="_blank">Storyboard - Messages</a> <br>
+                </dd>
+            </details>
+        </div>
+
+
+        <div class="content-box">
+            <h2>Introduction</h2> 
+            <video id="player1" playsinline controls>
+                <source src="./media/Introduction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                <i>
+                    October 2023<br>
+                    Video - 1:08 min <br>
+                    Responsibilities: Editing <br>
+                </i>
+                <br>
+                This video is an introduction. It was made for a course during my semester abroad at the University of Tsukuba. The aim was to introduce myself without the use of language. It shows me, while pictures and videos are shown in reversed chronological order. Most of the material was captured by my friends.
+            </p>
+        </div>
+
+        <div class="content-box" style="min-height: 220px;">
+            <h2>
+                <a href="./index.html" target="_blank">This Website</a>
+            </h2> 
+            <p>
+                <a href="./index.html" target="_blank"><img src="./media/logo-duck.svg" alt="Favicon" class="plate"  style="float: left; max-height: 145px; margin-right: 10px;"></a>
+                <i>
+                    October 2024<br>
+                    Website - written in HTML & CSS <br>
+                </i>
+                <br>
+                I created this portfolio website. Most HTML & CSS code was written by myself (the rest was heavily modified).<br>
+                The source code and more information about this website can be found on its <a href="https://github.com/AnonSchlingel/Portfolio" target="_blank">GitHub-Page</a>.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h2>
+                <a href="https://github.com/AnonSchlingel/University-of-Tsukuba-Guide" target="_blank">University of Tsukuba Guide - How to survive</a>
+            </h2> 
+            <p>
+                <i>
+                    February 2024<br>
+                    Article - written in Markdown <br>
+                    Responsibilities: Writing (92%), Formatting, Maintaining<br>
+                </i>
+                <br>
+                This is a written guide with a concise collection of knowledge and resources, ideal for incoming exchange students and people visiting Japan for the first time.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h2>Interactive Paper Dog</h2> 
+            <video id="player2" playsinline controls>
+                <source src="./media/dog.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                <i>
+                    December 2023<br>
+                    Figure <br>
+                    Responsibilities: Construction, Programming <br>
+                </i>
+                <br>
+                A dog sculpture with an origami head that waves its tail when its back is petted. For the realization, an Audorino was programmed so that when the touch sensor is touched, the motor is set in motion, causing the tail to wave.
+            </p>
+        </div>
+
+
+        <div class="content-box">
+            <h2>The chaos whithin</h2> 
+            <video id="player3" playsinline controls>
+                <source src="./media/The chaos within.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                <i>
+                    June - July 2022<br>
+                    Short Film - 3:28 min <br>
+                    Responsibilities: Camera, Editing (75%)<br>
+                </i>
+                <br>
+                This short film is about transsexuality and war, in which a not yet outed trans* woman is drafted into the armed forces.
+            </p>
+        </div>
+
+
+        <div class="content-box">
+            <h2>Warum bist DU hier?</h2> 
+            <video id="player4" playsinline controls>
+                <source src="./media/Warum bist DU hier.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                <i>
+                    August 2022<br>
+                    Video - 4 min <br>
+                    Responsibilities: Editing, Speaking Role<br>
+                </i>
+                <br>
+                This video was created using wildlife camera footage. It depicts a dialogue between animals and humans.
+            </p>
+        </div>
+
+
+        <div class="content-box">
+            <h2>Reflections</h2> 
+            <video id="player5" playsinline controls>
+                <source src="./media/Reflections.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                <i>
+                    May 2022<br>
+                    Short Film - 32 sek <br>
+                    Responsibilities: Directing, Camera, Editing (35%)<br>
+                </i>
+                <br>
+                This video was a short filming and editing exercise with the main theme of reflections.
+            </p>
+        </div>
+    </article>
+
+    <footer style="display: flex; justify-content: center;">
+        <p>
+            ©2024 by Eddy Quiel
+        </p>
+    </footer>
+
+    <!--JavaScript -->
+    <script src="./plyr/plyr.polyfilled.js"></script>
+    <script>
+        const player0 = new Plyr('#player0', {
+            controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'fullscreen'],
+        });
+        const player1 = new Plyr('#player1', {
+            controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'fullscreen'],
+        });
+        const player2 = new Plyr('#player2', {
+            controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'fullscreen'],
+        });
+        const player3 = new Plyr('#player3', {
+            controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'fullscreen'],
+        });
+        const player4 = new Plyr('#player4', {
+            controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'fullscreen'],
+        });
+        const player5 = new Plyr('#player5', {
+        controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'fullscreen'],
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,180 @@
+.skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skill-set {
+    flex: 1 1 calc(33.333% - 30px);
+    background-color: var(--neutral-bg-solid);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    align-content: center;
+    color: var(--primary-text);
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-set:hover {
+    transform: translateY(-5px);
+}
+
+.skill-set ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-set li {
+    display: flex;
+    align-items: center;
+}
+
+.skill-set img {
+    width: 50px;
+    height: 50px;
+}
+
+.details {
+    flex-grow: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.details h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--primary-text);
+    font-weight: bold;
+}
+
+.details p {
+    font-size: 0.9rem;
+    color: var(--neutral-text);
+    margin-bottom: 10px;
+}
+
+.details h4, .details p {
+    white-space: nowrap;
+}
+
+
+/* Progress Bar Styles */
+.progress-bar {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #aaaaaa;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background: linear-gradient(to right, var(--primary-accent), var(--secondary-accent));
+    border-radius: 5px;
+}
+
+.progress-bar[data-skill="DaVinci_Resolve"]::after {
+    width: 82%;
+}
+.progress-bar[data-skill="Audacity"]::after {
+    width: 40%;
+}
+.progress-bar[data-skill="Inkscape"]::after {
+    width: 40%;
+}
+.progress-bar[data-skill="HTML"]::after {
+    width: 60%;
+}
+.progress-bar[data-skill="CSS"]::after {
+    width: 50%;
+}
+.progress-bar[data-skill="MSoffice"]::after {
+    width: 82%;
+}
+.progress-bar[data-skill="Linux"]::after {
+    width: 73%;
+}
+.progress-bar[data-skill="PHP"]::after {
+    width: 20%;
+}
+.progress-bar[data-skill="camera"]::after {
+    width: 39%;
+}
+.progress-bar[data-skill="SBC"]::after {
+    width: 42%;
+}
+
+
+/*Languages*/
+.progress-bar[data-skill="German"]::after {
+    width: 100%;
+}
+.progress-bar[data-skill="English"]::after {
+    width: 93%;
+}
+.progress-bar[data-skill="Spanish"]::after {
+    width: 25%;
+}
+
+/*Introduction*/
+.cb-intro {
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    max-height: 100%;
+}
+.box {
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box0 {
+    display: flex; 
+    flex-wrap: nowrap;
+}
+.box1 {
+    max-width: 30%;
+}
+.box3 {
+    display: flex; 
+    flex-wrap: nowrap;
+}
+.language {
+    display: flex; 
+    flex-direction: column; 
+    gap: 5px;
+}
+
+@media only screen and (max-width: 680px) {
+    .intro-video {
+        max-width: 100%;
+    }
+}
+
+/* Introsection */
+@media only screen and (max-width: 749px) {
+    .box0 {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .box1 {
+        max-width: 100%;
+    }
+    .box3 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .language {
+        flex-direction: row; 
+    }
+    .lg {
+        width: 100%;
+    }
+}
