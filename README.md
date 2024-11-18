@@ -1,4 +1,4 @@
-# eddy-quiel.online
+# Portfolio Website
 
 This repository contains the source code of my portfolio website [eddy-quiel.online](https://eddy-quiel.online).
 
